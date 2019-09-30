@@ -15,8 +15,7 @@ const options = {
     },
     channels: [
         secret.channel_name
-    ],
-    options: {debug: true}
+    ]
 };
 
 // Create a client
