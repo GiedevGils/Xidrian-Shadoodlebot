@@ -1,9 +1,10 @@
 {
   "name": "xidrian-shadoodlebot",
-  "version": "0.0.1",
-  "description": "A bot for Twitch streamer Xidrian, to allow some functionalities which are difficult to come by or are not liked by Xidrian himself.",
-  "main": "bot.js",
+  "version": "0.2.0",
+  "description": "A bot for Twitch streamer Xidrian, to allow some functionalities which are difficult to come by or where other implementations are not liked by Xidrian himself.",
+  "main": "src/bot.ts",
   "scripts": {
+    "build": "tsc && node ./lib/bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "dependencies": {
     "axios": "^0.19.0",
     "tmi.js": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/tmi.js": "^1.4.0"
   }
 }
