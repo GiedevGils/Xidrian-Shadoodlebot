@@ -1,6 +1,6 @@
 # ShadoodleBot
 
-*Current version: 0.1*
+*Current version: 0.2*
 
 This bot is still in development. It's made for the Twitch streamer [Xidrian](https://twitch.tv/xidrian). It will consist of some bare-bones commands which other bots cannot provide.
 
