@@ -15,16 +15,17 @@ const options = {
     },
     channels: [
         secret.channel_name
-    ]
+    ],
+    options: {debug: true}
 };
 
 // Create a client
-const client = tmi.client(options);
+const chatClient = tmi.client(options);
 
-client.on('message', onMessageHandler);
-client.on('connected', onConnectedHandler);
+chatClient.on('message', onMessageHandler);
+chatClient.on('connected', onConnectedHandler);
 
-client.connect();
+chatClient.connect();
 
 
 function onConnectedHandler(addr: string, port: number) {
@@ -51,6 +52,7 @@ function onMessageHandler(channel: any, user: any, msg: any, self: any) {
         args: args
     }
 
-    commandHandler.handleMessage(client, options);
+
+    commandHandler.handleMessage(chatClient, options);
 
 }

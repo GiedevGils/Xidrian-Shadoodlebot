@@ -12,8 +12,10 @@ This bot is made using Node.JS and Typescript, by following the guide on the [Tw
 
 ## Commands
 
-`WORK IN PROGRESS`
-
+### Basic Commands
+- `!greet` - A simple greeting to test if the bot is working
+- `!rules` - Write the rules out in the chat!
+- `!commands` - A link to this page with a list of all the commands.
 
 ---
 
