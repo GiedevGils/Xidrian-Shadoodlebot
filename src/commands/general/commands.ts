@@ -8,7 +8,7 @@ export class CommandsCommand implements Command {
         console.log(args.info);
 
         // Ideally do this with a whisper, but due to not being  a verified bot it has to be done this way.
-        client.say(args.info.channel, "Check out the commands here: http://bit.ly/2n49rEn.");
+        client.say(args.info.channel, "Check out the commands here: http://bit.ly/shadoodle-commands");
 
     }
 }
