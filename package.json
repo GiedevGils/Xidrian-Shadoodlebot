@@ -1,0 +1,23 @@
+{
+  "name": "xidrian-shadoodlebot",
+  "version": "0.0.1",
+  "description": "A bot for Twitch streamer Xidrian, to allow some functionalities which are difficult to come by or are not liked by Xidrian himself.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/GiedevGils/xidrian-shadoodlebot.git"
+  },
+  "author": "Giede van Gils",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/GiedevGils/xidrian-shadoodlebot/issues"
+  },
+  "homepage": "https://gitlab.com/GiedevGils/xidrian-shadoodlebot#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "tmi.js": "^1.5.0"
+  }
+}
