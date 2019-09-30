@@ -15,7 +15,7 @@ export class CommandHandler {
 
         if (!command) return;
 
-        command.run(client, args.info.channel, args);
+        command.run(client, args);
 
     }
 }
