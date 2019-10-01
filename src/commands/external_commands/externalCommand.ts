@@ -1,7 +1,7 @@
 import { Command } from '../command';
 import Axios from 'axios';
 
-export abstract class LeagueCommand implements Command {
+export abstract class ExternalCommand implements Command {
     public readonly abstract commandName: string;
     public readonly abstract commandDescription: string;
     public abstract run(client: any, args: string[]): void;
