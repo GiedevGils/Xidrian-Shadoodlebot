@@ -1,10 +1,10 @@
-import secrets from '../../config/secrets.json';
-import settings from '../../config/settings.json';
+import secrets from '../../../config/secrets.json';
+import settings from '../../../config/settings.json';
 
-import { LeagueCommand } from './leagueCommand';
+import { ExternalCommand } from '../externalCommand';
 
 
-export class LevelCommand extends LeagueCommand {
+export class LevelCommand extends ExternalCommand {
     public commandName: string = 'level';
     public commandDescription: string = 'This command gets the summoner level of Xidrian.';
     public run(client: any, args: any) {
