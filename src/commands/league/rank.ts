@@ -14,12 +14,18 @@ export class RankCommand extends LeagueCommand {
 
         this.sendGetRequest(uri)
             .then(result => {
-                let rank = result[0].tier.toLowerCase().charAt(0).toUpperCase() 
-                + result[0].tier.toLowerCase().substring(1) 
-                + " " + result[0].rank;
+                let filteredResult = result.filter( (res: any) =>  res.queueType == "RANKED_SOLO_5x5");
+
+                // Capatalize the result properly
+                let rank = filteredResult[0].tier.charAt(0) // Keep only the first letter
+                + filteredResult[0].tier.toLowerCase().substring(1) // Add the rest back on but then lower case
+                + " " + filteredResult[0].rank; // Add the number at the end
+                
                 client.say(args.info.channel, "Xidrian's rank in League for Ranked SoloQ is currently: " + rank + ".");
             })
             .catch(err => console.log(err));
 
+
+        
     }
 }
