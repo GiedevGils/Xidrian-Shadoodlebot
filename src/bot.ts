@@ -15,8 +15,7 @@ const options = {
     },
     channels: [
         secret.channel_name
-    ],
-    options: {debug: true}
+    ]
 };
 
 // Create a client
@@ -52,7 +51,8 @@ function onMessageHandler(channel: any, user: any, msg: any, self: any) {
         args: args
     }
 
-
+    let time = new Date();
+    console.log("[" + time.getFullYear() + "-" + (time.getMonth() + 1) + "-" + time.getDate() + " @ " + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() + "] " + user['display-name'] + ": " + msg ); 
     commandHandler.handleMessage(chatClient, options);
 
 }
