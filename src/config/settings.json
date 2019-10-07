@@ -1,4 +1,5 @@
 {
     "prefix": "!",
-    "riot_api": "https://euw1.api.riotgames.com"
+    "riot_api": "https://euw1.api.riotgames.com",
+    "2gbe_api": "https://2g.be/twitch/"
 }
