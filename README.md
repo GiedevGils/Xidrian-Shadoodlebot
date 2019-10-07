@@ -21,6 +21,9 @@ This bot is made using Node.JS and Typescript, by following the guide on the [Tw
 - `!rank` - Get the rank of Xidrian
 - `!level` - Get the summoner level of Xidrian
 
+### Twitch Commands
+- `!followage` - Get the amount of time a user has been following.
+
 ---
 
 ## Technical Documentation
@@ -37,6 +40,7 @@ This project is made by using various packages that allow the development proces
 The project uses various APIs to receive all the information that is used by the various commands. These include:
 
 - [**Riot Games**](https://developer.riotgames.com/apis) - The Riot Games API is used to receive information about League of Legends accounts, and is used for the specific League of Legends commands.
+- [**2g.be**](https://2g.be/) - The 2g.be API allows the bot to ask the `!followage` info that it needs.
 
 
 ### Technical choices
