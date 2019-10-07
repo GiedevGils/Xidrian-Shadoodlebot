@@ -1,6 +1,6 @@
 {
   "name": "xidrian-shadoodlebot",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "A bot for Twitch streamer Xidrian, to allow some functionalities which are difficult to come by or where other implementations are not liked by Xidrian himself.",
   "main": "src/bot.ts",
   "scripts": {
