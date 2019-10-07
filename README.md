@@ -21,6 +21,9 @@ This bot is made using Node.JS and Typescript, by following the guide on the [Tw
 - `!rank` - Get the rank of Xidrian
 - `!level` - Get the summoner level of Xidrian
 
+### Twitch Commands
+- `!followage` - Get the amount of time a user has been following.
+
 ---
 
 ## Technical Documentation
