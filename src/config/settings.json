@@ -1,5 +1,6 @@
 {
     "prefix": "!",
-    "riot_api": "https://euw1.api.riotgames.com",
-    "2gbe_api": "https://2g.be/twitch/"
+    "riot_api": "https://euw1.api.riotgames.com/",
+    "2gbe_api": "https://2g.be/twitch/",
+    "twitter_api": "https://api.twitter.com/1.1/"
 }
