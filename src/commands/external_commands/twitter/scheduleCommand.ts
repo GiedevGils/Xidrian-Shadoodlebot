@@ -7,7 +7,9 @@ export class ScheduleCommand extends ExternalCommand {
     public commandDescription: string = 'Retrieve the schedule from Twitter.';
 
     public run(client: any, args: any) {
-        let url = 
+        let url = settings.twitter_api + 'stasus/user_timeline.json?screen_name=xidrian';
+
+        let header = {'Authorization': 'OAuth oauth_consumer_key="' + secrets.twitter_consumer_key + '",oauth_token="' + secrets.twitter_consumer_secret + '",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1570553036",oauth_nonce="SyEEBlyTKIE",oauth_version="1.0",oauth_signature="dsK85MjlPtOkJqZG9c3o9kbtZi4%3D"'}
 
         this.sendGetRequest(url)
             .then( (res: any) => {
