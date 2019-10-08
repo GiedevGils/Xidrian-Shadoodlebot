@@ -10,7 +10,7 @@ export class RankCommand extends ExternalCommand {
 
     public run(client: any, args: any) {
 
-        let uri: string = settings.riot_api + "/lol/league/v4/entries/by-summoner/" + secrets.league_account_id + "?api_key=" + secrets.dev_riot_games_api_token;
+        let uri: string = settings.riot_api + "lol/league/v4/entries/by-summoner/" + secrets.league_account_id + "?api_key=" + secrets.dev_riot_games_api_token;
 
         this.sendGetRequest(uri)
             .then(result => {
