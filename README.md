@@ -1,6 +1,6 @@
 # ShadoodleBot
 
-*Current version: 0.4.0*
+*Current version: 0.5.0*
 
 This bot is still in development. It's made for the Twitch streamer [Xidrian](https://twitch.tv/xidrian). It will consist of some bare-bones commands which other bots cannot provide.
 
@@ -13,16 +13,19 @@ This bot is made using Node.JS and Typescript, by following the guide on the [Tw
 ## Commands
 
 ### Basic Commands
-- `!greet` - A simple greeting to test if the bot is working
-- `!rules` - Write the rules out in the chat!
+- `!greet` - A simple greeting to test if the bot is working.
+- `!rules` - Write the rules out in the chat.
 - `!commands` - A link to this page with a list of all the commands.
 
 ### League of Legends Commands
-- `!rank` - Get the rank of Xidrian
-- `!level` - Get the summoner level of Xidrian
+- `!rank` - Get the rank of Xidrian.
+- `!level` - Get the summoner level of Xidrian.
 
 ### Twitch Commands
 - `!followage` - Get the amount of time a user has been following.
+
+### Twitter Commands
+- `!schedule` - Retrieve the latest schedule from Twitter.
 
 ---
 
@@ -40,6 +43,8 @@ This project is made by using various packages that allow the development proces
 The project uses various APIs to receive all the information that is used by the various commands. These include:
 
 - [**Riot Games**](https://developer.riotgames.com/apis) - The Riot Games API is used to receive information about League of Legends accounts, and is used for the specific League of Legends commands.
+- [**2g.be**](https://2g.be/) - The 2g.be API allows the bot to ask the `!followage` info that it needs.
+- [**Twitter**](https://developer.twitter.com) - The Twitter API allows us to get the schedule from @Xidrian's twitter.
 
 
 ### Technical choices

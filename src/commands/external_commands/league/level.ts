@@ -9,7 +9,7 @@ export class LevelCommand extends ExternalCommand {
     public commandDescription: string = 'This command gets the summoner level of Xidrian.';
     public run(client: any, args: any) {
 
-        let uri:string = settings.riot_api + '/lol/summoner/v4/summoners/by-name/xidrian?api_key=' + secrets.dev_riot_games_api_token;
+        let uri:string = settings.riot_api + 'lol/summoner/v4/summoners/by-name/xidrian?api_key=' + secrets.dev_riot_games_api_token;
 
         this.sendGetRequest(uri)
             .then(result => {
