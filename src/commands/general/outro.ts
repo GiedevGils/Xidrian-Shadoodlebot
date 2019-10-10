@@ -1,6 +1,6 @@
 import { Command } from '../command';
 
-export class GreetCommand implements Command {
+export class OutroCommand implements Command {
     public commandName: string = 'outro';
     public commandDescription: string = 'This command writes a simple outro message to the chat.';
     public run(client: any, args: any) {
